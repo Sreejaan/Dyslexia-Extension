@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dyslexia Helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  
+  <h1>Dyslexia Helper</h1>
+  <input type="checkbox" id="enabled" checked> Enable Dyslexia Helper<br>
+  <label for="font">Select the font: </label>
+  <select id="font">
+    <option value="OpenDyslexic-Regular.otf">Regular</option>
+    <option value="OpenDyslexicAlta-Regular.otf">Alta-Regular</option>
+    <option value="OpenDyslexicMono-Regular.otf">Mono-Regular</option>
+    <option value="OpenDyslexic-Bold.otf">Bold</option>
+    <option value="OpenDyslexicAlta-Bold.otf">Alta-Bold</option>
+    <option value="OpenDyslexic-Italic.otf">Italic</option>
+    <option value="OpenDyslexicAlta-Italic.otf">Alta-Italic</option>
+    <option value="OpenDyslexic-BoldItalic.otf">Bold-Italic</option>
+    <option value="OpenDyslexicAlta-BoldItalic.otf">Alta-Bold-Italic</option>
+  </select>
+  <label for="fontSize">Font Size:</label>
+  <input type="range" id="fontSize" min="12" max="24" step="1" value="16">
+  <span id="fontSizeValue">16</span>px
+  <br>
+  <label for="letterSpacing">Letter Spacing:</label>
+  <input type="range" id="letterSpacing" min="0" max="20" step="0.1" value="0">
+  <span id="letterSpacingValue">0</span>px
+  <br>
+  <label for="bgColor">Background Color:</label>
+  <input type="color" id="bgColor" value="#ffffff">
+  <br>
+  <button id="save">Save</button>
+  <script src="popup.js"></script>
+</body>
+</html>
