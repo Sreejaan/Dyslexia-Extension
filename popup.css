@@ -1,24 +1,70 @@
 body {
-  width: 200px;
-  padding: 10px;
-  font-family: Arial, sans-serif;
+  width: 240px;
+  padding: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  color: #333;
 }
 
 h1 {
-  font-size: 16px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #2c3e50;
 }
 
 label {
   display: block;
-  margin-top: 10px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+select, 
+input[type="range"], 
+input[type="color"] {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
 
 input[type="range"] {
-  width: 100%;
+  padding: 0;
 }
 
 button {
-  margin-top: 10px;
+  margin-top: 15px;
   width: 100%;
+  padding: 8px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+p {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #555;
+}
+
+kbd {
+  background: #eee;
+  border-radius: 3px;
+  padding: 2px 4px;
+  font-size: 11px;
+  border: 1px solid #ccc;
 }

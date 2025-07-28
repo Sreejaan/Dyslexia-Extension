@@ -3,16 +3,14 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
     applyStyles();
   }
 });
-function applyStyles() {
-  
-  chrome.storage.sync.get(['enabled', 'fontSize', 'letterSpacing', 'bgColor', 'selectedFont'], function(settings) {
 
+function applyStyles() {
+  chrome.storage.sync.get(['enabled', 'fontSize', 'letterSpacing', 'bgColor', 'selectedFont'], function(settings) {
     if (settings.enabled) {
-      
-      let fontFile = settings.selectedFont || 'OpenDyslexia-Regular.otf';
+      let fontFile = settings.selectedFont || 'OpenDyslexic-Regular.otf';
       let fontUrl = chrome.runtime.getURL('fonts/' + fontFile);
-      console.log(fontFile);
-      console.log(fontUrl);
+      console.log("Font file:", fontFile);
+      console.log("Font URL:", fontUrl);
       let style = `
         @font-face {
           font-family: 'OpenDyslexic';
@@ -23,22 +21,20 @@ function applyStyles() {
         * {
           font-family: 'OpenDyslexic', sans-serif !important;
           font-size: ${settings.fontSize || '16'}px !important;
-          letter-spacing: ${settings.letterSpacing || 'normal'}px !important;
+          letter-spacing: ${settings.letterSpacing || '0'}px !important;
         }
         body {
           background-color: ${settings.bgColor || 'white'} !important;
         }
       `;
       let styleElement = document.querySelector('#dyslexia-styles');
-      if(!styleElement)
-      {
+      if (!styleElement) {
         styleElement = document.createElement('style');
         styleElement.id = 'dyslexia-styles';
         document.head.appendChild(styleElement);
       }
       styleElement.textContent = style;
-    } 
-    else {
+    } else {
       let styleElement = document.querySelector('#dyslexia-styles');
       if (styleElement) {
         styleElement.remove();
@@ -47,5 +43,5 @@ function applyStyles() {
   });
 }
 
-// Apply styles on load
+// Apply styles on page load
 applyStyles();
