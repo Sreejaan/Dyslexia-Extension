@@ -43,7 +43,6 @@ git clone https://github.com/Sreejaan/Dyslexia-Extension.git
 
 ## Demo Images
 
-*Add your demo images here*:
 ![Extension]({8C1377E1-12F8-46CA-882B-D07380328C8F}.png)
 ![Fonts]({07E39ABD-5E86-4553-B771-D5974079C2CC}.png)
 ## Usage
