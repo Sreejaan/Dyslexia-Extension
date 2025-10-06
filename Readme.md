@@ -61,6 +61,3 @@ git clone https://github.com/Sreejaan/Dyslexia-Extension.git
 * `background.js` - Handles keyboard shortcut and text-to-speech.
 * `fonts/` - Contains dyslexia-friendly fonts.
 
-## License
-
-*Specify your license here*
