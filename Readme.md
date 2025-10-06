@@ -19,7 +19,7 @@ Follow these steps to install the extension locally:
 1. **Clone the repository:**
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Sreejaan/Dyslexia-Extension.git
 ```
 
 2. **Open Chrome Extensions Page:**
@@ -44,11 +44,8 @@ git clone <your-repo-url>
 ## Demo Images
 
 *Add your demo images here*:
-
-![Demo 1](path/to/demo1.png)
-
-![Demo 2](path/to/demo2.png)
-
+![Extension]({8C1377E1-12F8-46CA-882B-D07380328C8F}.png)
+![Fonts]({07E39ABD-5E86-4553-B771-D5974079C2CC}.png)
 ## Usage
 
 1. Click on the Dyslexia Helper icon.
