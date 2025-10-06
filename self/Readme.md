@@ -177,21 +177,3 @@ When using different font types, specify their format correctly:
 ```
 
 ---
-
-## 🧠 Summary Table
-
-| Section | Meaning | Your Understanding | Correction / Addition |
-|----------|----------|--------------------|------------------------|
-| permissions | What access extension has | ✅ Mostly right | Clarify “scripting” and “activeTab” scope |
-| content_scripts | Auto-injected page scripts | ✅ Right | Runs automatically, limited Chrome API access |
-| action | Defines popup & icon | ✅ Right | Icons for contexts, not screen resize |
-| icons | Extension identity icons | ⚠️ Partial | Used in settings/store, not toolbar |
-| commands | Keyboard shortcuts | ❌ Missing | Define hotkeys for extension features |
-| background | Event handler/service worker | ⚠️ Partial | Separate from content.js; handles events |
-| web_accessible_resources | Publicly shareable files | ⚠️ Partial | Required for injecting custom fonts, etc. |
-
----
-
-## 🚀 Suggested Next Step
-Would you like a **flow diagram** explaining how these parts communicate (popup → background → content → webpage)?  
-It’ll make the entire extension logic crystal clear.
